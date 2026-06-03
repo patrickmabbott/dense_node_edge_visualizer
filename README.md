@@ -34,6 +34,10 @@ npm run cli -- --input data/baseline_dataset.json --confidence high,medium --ite
 npm run cli -- --input <path> --confidence <levels> [--output result.json] [--iterations 200]
 ```
 
+# Run tests
+npm test
+```
+
 CLI options:
 - `--input` (required): Path to a dataset JSON file
 - `--confidence`: Comma-separated confidence levels to include (default: `high,medium,low`)

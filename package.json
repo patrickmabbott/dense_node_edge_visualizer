@@ -6,7 +6,9 @@
     "dev": "concurrently \"node server/index.js\" \"npx vite\"",
     "server": "node server/index.js",
     "cli": "node server/cli.js",
-    "build": "npx vite build"
+    "build": "npx vite build",
+    "test": "node --test test/*.test.js",
+    "test:coverage": "node --test --experimental-test-coverage test/*.test.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
