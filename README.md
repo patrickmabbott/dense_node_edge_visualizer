@@ -94,6 +94,9 @@ Deterministic: uses a seeded PRNG (`mulberry32`) so the same input always produc
 
 Edge-Node Piercing carries the highest weight (0.20) because an edge passing through an unrelated node creates the most confusing visual artifact in an investigation graph.
 
+There is also one final check. An algorithm that fails to contain at least 30% of nodes in the initial viewport will exhibit 0 fitness.
+This is meant to prevent algorithms from totally ignoring sensible restrictions on use of space and assigning vast tracts of whitespace to each node to facilitate avoiding crossings/overlaps.
+
 ## Expected Fitness Scores
 
 Baseline scores using the included dataset with the default force-directed algorithm at 10000 iterations:
