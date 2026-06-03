@@ -133,18 +133,18 @@ export function evaluateFitness(positionedNodes, edges, iterations, converged, o
       visibleCount++;
     }
   }
-  const containmentPct = visibleCount / N;
+  const containmentRatio = visibleCount / N;
   let viewportPenalty;
   // Ideally, I want the graph to be dense enough to contain something in the neighborhood of 70% of nodes within the viewport. So, anything between 60% and 80% is good (0 penalty). 
   // Above 80% is too dense (penalty increases up to 1 at 100%), 
   // below 60% is too sparse (penalty increases up to 1 at 30%), 
   // and below 30% is basically unusable (penalty = 1). This encourages the algorithm to find a good balance of density without being too cramped or too empty.
-  if(containmentPct >= 0.80) {
-    viewportPenalty = (containmentPct - 0.80) / 0.20;
-  } else if (containmentPct >= 0.60) {
+  if(containmentRatio >= 0.80) {
+    viewportPenalty = (containmentRatio - 0.80) / 0.20;
+  } else if (containmentRatio >= 0.60) {
     viewportPenalty = 0;
-  } else if (containmentPct >= 0.30) {
-    viewportPenalty = (0.60 - containmentPct) / 0.30;
+  } else if (containmentRatio >= 0.30) {
+    viewportPenalty = (0.60 - containmentRatio) / 0.30;
   } else {
     viewportPenalty = 1.0;
   }
@@ -191,7 +191,7 @@ export function evaluateFitness(positionedNodes, edges, iterations, converged, o
     edgeNodePiercing: { raw: piercingCount, penalty: piercingPenalty, weight: w.edgeNodePiercing },
     nodeOverlap: { raw: overlapCount, penalty: overlapPenalty, weight: w.nodeOverlap },
     personalSpace: { raw: spaceViolations, penalty: spacePenalty, weight: w.personalSpace },
-    viewportContainment: { raw: visibleCount, penalty: viewportPenalty, weight: w.viewportContainment },
+    viewportContainment: { raw: containmentRatio, penalty: viewportPenalty, weight: w.viewportContainment },
     clumping: { raw: nonEmpty.length, penalty: clumpingPenalty, weight: w.clumping },
     edgeLengthVariance: { raw: edgeSegments.length, penalty: edgeLengthPenalty, weight: w.edgeLengthVariance },
   };

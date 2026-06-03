@@ -80,13 +80,13 @@
     },
     {
       "id": "org_serenity_imports",
-      "label": "Serenity Imports",
+      "label": "Viper Cartel",
       "type": "organization",
       "cluster": 1
     },
     {
       "id": "org_red_line_logistics",
-      "label": "Red Line Logistics",
+      "label": "Red Line Crew",
       "type": "organization",
       "cluster": 1
     },
@@ -182,7 +182,7 @@
     },
     {
       "id": "org_nexus_financial",
-      "label": "Nexus Financial",
+      "label": "Dragon Syndicate",
       "type": "organization",
       "cluster": 2
     },
@@ -278,7 +278,7 @@
     },
     {
       "id": "org_pacific_rim",
-      "label": "Pacific Rim Trading",
+      "label": "Phantom Brotherhood",
       "type": "organization",
       "cluster": 3
     },
@@ -368,7 +368,7 @@
     },
     {
       "id": "org_blue_horizon",
-      "label": "Blue Horizon Partners",
+      "label": "Midnight Alliance",
       "type": "organization",
       "cluster": 4
     },
@@ -464,7 +464,7 @@
     },
     {
       "id": "org_quantum_analytics",
-      "label": "Quantum Analytics",
+      "label": "HK54",
       "type": "organization",
       "cluster": 5
     },
@@ -566,7 +566,7 @@
     },
     {
       "id": "org_cardinal_point",
-      "label": "Cardinal Point LLC",
+      "label": "Crimson Soldiers",
       "type": "organization",
       "cluster": 6
     },
@@ -584,7 +584,7 @@
     },
     {
       "id": "org_5th_street",
-      "label": "5th Street Associates",
+      "label": "North Side Outfit",
       "type": "organization",
       "cluster": 6
     },
