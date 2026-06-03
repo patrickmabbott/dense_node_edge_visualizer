@@ -31,7 +31,7 @@ console.log(`Nodes: ${filteredNodes.length}, Edges: ${filteredEdges.length}`);
 console.log(`Running layout (${iterations} iterations)...`);
 
 const layoutResult = computeLayout(filteredNodes, filteredEdges, { iterations });
-const fitness = evaluateFitness(layoutResult.nodes, filteredEdges);
+const fitness = evaluateFitness(layoutResult.nodes, filteredEdges, layoutResult.iterations, layoutResult.converged);
 
 console.log(`\nConverged: ${layoutResult.converged} (${layoutResult.iterations} iterations)`);
 console.log(`\nFitness Score: ${fitness.score.toFixed(4)}`);

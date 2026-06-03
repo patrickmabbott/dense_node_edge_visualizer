@@ -79,8 +79,8 @@ export function evaluateFitness(positionedNodes, edges, iterations, converged, o
       }
     }
   }
-  const crossingPenalty = Math.min(1, crossingCount / (E * 2 || 1));
-  const nearParallelPenalty = Math.min(1, nearParallelCount / (E * 0.3 || 1));
+  const crossingPenalty = Math.min(1, crossingCount / (Math.pow(E, 1.5) || 1));
+  const nearParallelPenalty = Math.min(1, nearParallelCount / (Math.pow(E, 1.2) || 1));
 
   // --- Edge-node piercing ---
   let piercingCount = 0;
@@ -135,12 +135,11 @@ export function evaluateFitness(positionedNodes, edges, iterations, converged, o
   }
   const containmentRatio = visibleCount / N;
   let viewportPenalty;
-  // Ideally, I want the graph to be dense enough to contain something in the neighborhood of 70% of nodes within the viewport. So, anything between 60% and 80% is good (0 penalty). 
-  // Above 80% is too dense (penalty increases up to 1 at 100%), 
-  // below 60% is too sparse (penalty increases up to 1 at 30%), 
-  // and below 30% is basically unusable (penalty = 1). This encourages the algorithm to find a good balance of density without being too cramped or too empty.
-  if(containmentRatio >= 0.80) {
-    viewportPenalty = (containmentRatio - 0.80) / 0.20;
+  // Ideal containment is 60-90%. Above 90% gets a gentle penalty (max 0.25 at 100%) since
+  // over-compression is already penalized by nodeOverlap and personalSpace terms.
+  // Below 60% means too many nodes are off-screen; below 30% is unusable.
+  if(containmentRatio >= 0.90) {
+    viewportPenalty = (containmentRatio - 0.90) / 0.10 * 0.25;
   } else if (containmentRatio >= 0.60) {
     viewportPenalty = 0;
   } else if (containmentRatio >= 0.30) {

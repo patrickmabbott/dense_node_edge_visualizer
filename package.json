@@ -6,7 +6,7 @@
     "dev": "concurrently \"node server/index.js\" \"npx vite\"",
     "server": "node server/index.js",
     "cli": "node server/cli.js",
-    "generate-data": "node scripts/generate_dataset.js"
+    "build": "npx vite build"
   },
   "dependencies": {
     "cors": "^2.8.5",
