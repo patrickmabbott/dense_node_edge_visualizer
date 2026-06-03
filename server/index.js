@@ -31,10 +31,11 @@ app.post('/api/layout', (req, res) => {
 
   try {
     const layoutResult = computeLayout(nodes, edges, options);
-    const fitness = evaluateFitness(layoutResult.nodes, edges);
+    const { nodes : positionedNodes, iterations, converged } = layoutResult;
+    const fitness = evaluateFitness(positionedNodes, edges, iterations, converged, options);
 
     res.json({
-      nodes: layoutResult.nodes,
+      nodes: positionedNodes,
       edges,
       fitness,
       meta: {

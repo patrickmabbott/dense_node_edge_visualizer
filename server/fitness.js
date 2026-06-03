@@ -13,18 +13,20 @@ const DEFAULTS = {
   personalSpaceMultiplier: 1.25,
   nearParallelThresholdDeg: 5,
   weights: {
-    edgeCrossings: 0.20,
+    converged: 0.05,
+    iterationsRequired : .05,
+    edgeCrossings: 0.15,
     nearParallelCrossings: 0.10,
     edgeNodePiercing: 0.20,
     nodeOverlap: 0.15,
     personalSpace: 0.10,
     viewportContainment: 0.10,
-    clumping: 0.10,
+    clumping: 0.05,
     edgeLengthVariance: 0.05,
   },
 };
 
-export function evaluateFitness(positionedNodes, edges, options = {}) {
+export function evaluateFitness(positionedNodes, edges, iterations, converged, options = {}) {
   const opts = { ...DEFAULTS, ...options };
   const w = opts.weights;
   const R = opts.nodeRadius;
@@ -37,7 +39,18 @@ export function evaluateFitness(positionedNodes, edges, options = {}) {
     return { score: 1, breakdown: emptyBreakdown(w) };
   }
 
-  // --- Edge crossings ---
+  // --- Convergence and iteration count terms ---
+
+  // No penalty as long as the algorithm managed to converge.
+  const didNotConvergePenalty = converged ? 0 : 1;
+
+  // If it didn't converge, full iteration penalty. Otherwise, logarithmic penalty that starts at 0 for fast iteration (200 it) and approaches 1 at very high iteration counts (5000 it). 
+  // This encourages the algorithm to find a good layout quickly without needing to run for an excessive number of iterations.
+  const iterationPenalty = converged
+    ? Math.min(1, Math.max(0, (Math.log(iterations) - Math.log(200)) / (Math.log(5000) - Math.log(200))))
+    : 0;
+
+  // --- Edge crossings. It's infeasible to entirely eliminate edge crossings in dense graphs but they should still be minimized ---
   const edgeSegments = edges
     .map((e) => {
       const s = nodeMap.get(e.source);
@@ -122,10 +135,16 @@ export function evaluateFitness(positionedNodes, edges, options = {}) {
   }
   const containmentPct = visibleCount / N;
   let viewportPenalty;
-  if (containmentPct >= 0.70) {
+  // Ideally, I want the graph to be dense enough to contain something in the neighborhood of 70% of nodes within the viewport. So, anything between 60% and 80% is good (0 penalty). 
+  // Above 80% is too dense (penalty increases up to 1 at 100%), 
+  // below 60% is too sparse (penalty increases up to 1 at 30%), 
+  // and below 30% is basically unusable (penalty = 1). This encourages the algorithm to find a good balance of density without being too cramped or too empty.
+  if(containmentPct >= 0.80) {
+    viewportPenalty = (containmentPct - 0.80) / 0.20;
+  } else if (containmentPct >= 0.60) {
     viewportPenalty = 0;
-  } else if (containmentPct >= 0.50) {
-    viewportPenalty = (0.70 - containmentPct) / 0.20;
+  } else if (containmentPct >= 0.30) {
+    viewportPenalty = (0.60 - containmentPct) / 0.30;
   } else {
     viewportPenalty = 1.0;
   }
@@ -150,7 +169,8 @@ export function evaluateFitness(positionedNodes, edges, options = {}) {
     clumpingPenalty = Math.min(1, Math.max(0, (cv - 1.0) / 2.0));
   }
 
-  // --- Edge length variance ---
+  // --- Edge length variance. This is similar to clumping, but for edges. 
+  // Generally, we want to use the space effectively by having nodes and edges both relatively evenly distributed. Obviously these are correlated and so they only sum to .1 weight.  ---
   let edgeLengthPenalty = 0;
   if (edgeSegments.length > 1) {
     const lengths = edgeSegments.map((s) =>
@@ -164,6 +184,8 @@ export function evaluateFitness(positionedNodes, edges, options = {}) {
 
   // --- Composite score ---
   const breakdown = {
+    didNotConverge: { raw: didNotConvergePenalty, penalty: didNotConvergePenalty, weight: w.converged },
+    iterations: { raw: iterations, penalty: iterationPenalty, weight: w.iterationsRequired },
     edgeCrossings: { raw: crossingCount, penalty: crossingPenalty, weight: w.edgeCrossings },
     nearParallelCrossings: { raw: nearParallelCount, penalty: nearParallelPenalty, weight: w.nearParallelCrossings },
     edgeNodePiercing: { raw: piercingCount, penalty: piercingPenalty, weight: w.edgeNodePiercing },

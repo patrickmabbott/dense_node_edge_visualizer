@@ -41,12 +41,15 @@ async function renderGraph() {
 
   const filteredEdges = dataset.edges.filter((e) => levels.includes(e.confidence));
   const nodeIds = new Set(filteredEdges.flatMap((e) => [e.source, e.target]));
+  const options = {
+    iterations: 10000
+  };
   const filteredNodes = dataset.nodes.filter((n) => nodeIds.has(n.id));
 
   const res = await fetch('/api/layout', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ nodes: filteredNodes, edges: filteredEdges }),
+    body: JSON.stringify({ nodes: filteredNodes, edges: filteredEdges, options }),
   });
   currentResult = await res.json();
 
@@ -142,6 +145,8 @@ function updateFitness(fitness) {
   scoreEl.text(s.toFixed(4)).attr('class', cls);
 
   const termNames = {
+    didNotConverge: 'Did Not Converge',
+    iterations: 'Iterations',
     edgeCrossings: 'Edge Crossings',
     nearParallelCrossings: 'Near-∥ Crossings',
     edgeNodePiercing: 'Edge→Node Pierce',
