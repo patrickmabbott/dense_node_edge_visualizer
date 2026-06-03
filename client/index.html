@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Investigation Network Graph</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app">
+    <div id="sidebar">
+      <h2>Controls</h2>
+      <div class="control-group">
+        <h3>Confidence Levels</h3>
+        <label><input type="checkbox" id="cb-high" checked /> High</label>
+        <label><input type="checkbox" id="cb-medium" checked /> Medium</label>
+        <label><input type="checkbox" id="cb-low" checked /> Low</label>
+      </div>
+      <div id="fitness-panel">
+        <h3>Fitness</h3>
+        <div id="fitness-score">—</div>
+        <div id="fitness-breakdown"></div>
+      </div>
+      <div id="meta-panel">
+        <h3>Layout Info</h3>
+        <div id="meta-info"></div>
+      </div>
+    </div>
+    <div id="graph-container">
+      <svg id="graph"></svg>
+    </div>
+  </div>
+  <div id="tooltip"></div>
+  <script type="module" src="main.js"></script>
+</body>
+</html>

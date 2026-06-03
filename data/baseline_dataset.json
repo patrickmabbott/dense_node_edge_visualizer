@@ -1,0 +1,2424 @@
+{
+  "metadata": {
+    "generated": "2026-06-02",
+    "seed": 42,
+    "description": "Synthetic FBI-style investigation network for graph layout benchmarking",
+    "nodeCount": 100,
+    "edgeCount": 301,
+    "edgeDistribution": {
+      "high": 61,
+      "medium": 100,
+      "low": 140
+    }
+  },
+  "nodes": [
+    {
+      "id": "person_marcus_moretti",
+      "label": "Marcus Moretti",
+      "type": "person",
+      "cluster": 1
+    },
+    {
+      "id": "person_elena_rossi",
+      "label": "Elena Rossi",
+      "type": "person",
+      "cluster": 1
+    },
+    {
+      "id": "person_tommy_deluca",
+      "label": "Tommy DeLuca",
+      "type": "person",
+      "cluster": 1
+    },
+    {
+      "id": "person_angelo_ferrara",
+      "label": "Angelo Ferrara",
+      "type": "person",
+      "cluster": 1
+    },
+    {
+      "id": "person_jade_santos",
+      "label": "Jade Santos",
+      "type": "person",
+      "cluster": 1
+    },
+    {
+      "id": "person_dante_marchetti",
+      "label": "Dante Marchetti",
+      "type": "person",
+      "cluster": 1
+    },
+    {
+      "id": "person_rosa_garcia",
+      "label": "Rosa Garcia",
+      "type": "person",
+      "cluster": 1
+    },
+    {
+      "id": "person_frank_brennan",
+      "label": "Frank Brennan",
+      "type": "person",
+      "cluster": 1
+    },
+    {
+      "id": "person_luz_reyes",
+      "label": "Luz Reyes",
+      "type": "person",
+      "cluster": 1
+    },
+    {
+      "id": "person_patrick_kowalski",
+      "label": "Patrick Kowalski",
+      "type": "person",
+      "cluster": 1
+    },
+    {
+      "id": "org_meridian_holdings",
+      "label": "Meridian Holdings",
+      "type": "organization",
+      "cluster": 1
+    },
+    {
+      "id": "org_serenity_imports",
+      "label": "Serenity Imports",
+      "type": "organization",
+      "cluster": 1
+    },
+    {
+      "id": "org_red_line_logistics",
+      "label": "Red Line Logistics",
+      "type": "organization",
+      "cluster": 1
+    },
+    {
+      "id": "event_warehouse_mtg_20230115",
+      "label": "Warehouse Meeting 2023-01-15",
+      "type": "event",
+      "cluster": 1
+    },
+    {
+      "id": "event_port_delivery_20230302",
+      "label": "Port Delivery 2023-03-02",
+      "type": "event",
+      "cluster": 1
+    },
+    {
+      "id": "event_cash_drop_20230418",
+      "label": "Cash Drop 2023-04-18",
+      "type": "event",
+      "cluster": 1
+    },
+    {
+      "id": "event_surveillance_20230520",
+      "label": "Surveillance Op 2023-05-20",
+      "type": "event",
+      "cluster": 1
+    },
+    {
+      "id": "person_chen_nakamura",
+      "label": "Chen Nakamura",
+      "type": "person",
+      "cluster": 2
+    },
+    {
+      "id": "person_sarah_kim",
+      "label": "Sarah Kim",
+      "type": "person",
+      "cluster": 2
+    },
+    {
+      "id": "person_omar_hassan",
+      "label": "Omar Hassan",
+      "type": "person",
+      "cluster": 2
+    },
+    {
+      "id": "person_bridget_obrien",
+      "label": "Bridget O'Brien",
+      "type": "person",
+      "cluster": 2
+    },
+    {
+      "id": "person_hector_cruz",
+      "label": "Hector Cruz",
+      "type": "person",
+      "cluster": 2
+    },
+    {
+      "id": "person_vera_johannsen",
+      "label": "Vera Johannsen",
+      "type": "person",
+      "cluster": 2
+    },
+    {
+      "id": "person_nadia_popov",
+      "label": "Nadia Popov",
+      "type": "person",
+      "cluster": 2
+    },
+    {
+      "id": "person_leo_tanaka",
+      "label": "Leo Tanaka",
+      "type": "person",
+      "cluster": 2
+    },
+    {
+      "id": "org_novus_capital",
+      "label": "Novus Capital Group",
+      "type": "organization",
+      "cluster": 2
+    },
+    {
+      "id": "org_golden_phoenix",
+      "label": "Golden Phoenix LLC",
+      "type": "organization",
+      "cluster": 2
+    },
+    {
+      "id": "org_silverstone_trust",
+      "label": "Silverstone Trust",
+      "type": "organization",
+      "cluster": 2
+    },
+    {
+      "id": "org_nexus_financial",
+      "label": "Nexus Financial",
+      "type": "organization",
+      "cluster": 2
+    },
+    {
+      "id": "event_wire_transfer_20230205",
+      "label": "Wire Transfer 2023-02-05",
+      "type": "event",
+      "cluster": 2
+    },
+    {
+      "id": "event_account_review_20230401",
+      "label": "Account Review 2023-04-01",
+      "type": "event",
+      "cluster": 2
+    },
+    {
+      "id": "event_audit_meeting_20230515",
+      "label": "Audit Meeting 2023-05-15",
+      "type": "event",
+      "cluster": 2
+    },
+    {
+      "id": "event_shell_filing_20230610",
+      "label": "Shell Company Filing 2023-06-10",
+      "type": "event",
+      "cluster": 2
+    },
+    {
+      "id": "person_viktor_volkov",
+      "label": "Viktor Volkov",
+      "type": "person",
+      "cluster": 3
+    },
+    {
+      "id": "person_yuri_petrov",
+      "label": "Yuri Petrov",
+      "type": "person",
+      "cluster": 3
+    },
+    {
+      "id": "person_sergei_kozlov",
+      "label": "Sergei Kozlov",
+      "type": "person",
+      "cluster": 3
+    },
+    {
+      "id": "person_ivan_fedorov",
+      "label": "Ivan Fedorov",
+      "type": "person",
+      "cluster": 3
+    },
+    {
+      "id": "person_katya_dimitrov",
+      "label": "Katya Dimitrov",
+      "type": "person",
+      "cluster": 3
+    },
+    {
+      "id": "person_anya_bianchi",
+      "label": "Anya Bianchi",
+      "type": "person",
+      "cluster": 3
+    },
+    {
+      "id": "person_mei_sato",
+      "label": "Mei Sato",
+      "type": "person",
+      "cluster": 3
+    },
+    {
+      "id": "person_dominic_novak",
+      "label": "Dominic Novak",
+      "type": "person",
+      "cluster": 3
+    },
+    {
+      "id": "person_grace_mueller",
+      "label": "Grace Mueller",
+      "type": "person",
+      "cluster": 3
+    },
+    {
+      "id": "org_atlas_security",
+      "label": "Atlas Security Group",
+      "type": "organization",
+      "cluster": 3
+    },
+    {
+      "id": "org_iron_gate",
+      "label": "Iron Gate Properties",
+      "type": "organization",
+      "cluster": 3
+    },
+    {
+      "id": "org_pacific_rim",
+      "label": "Pacific Rim Trading",
+      "type": "organization",
+      "cluster": 3
+    },
+    {
+      "id": "event_arms_deal_20230601",
+      "label": "Arms Deal SOHO 2023-06-01",
+      "type": "event",
+      "cluster": 3
+    },
+    {
+      "id": "event_weapons_cache_20230310",
+      "label": "Weapons Cache 2023-03-10",
+      "type": "event",
+      "cluster": 3
+    },
+    {
+      "id": "event_border_crossing_20230425",
+      "label": "Border Crossing 2023-04-25",
+      "type": "event",
+      "cluster": 3
+    },
+    {
+      "id": "event_meeting_istanbul_20230708",
+      "label": "Meeting Istanbul 2023-07-08",
+      "type": "event",
+      "cluster": 3
+    },
+    {
+      "id": "person_james_okafor",
+      "label": "James Okafor",
+      "type": "person",
+      "cluster": 4
+    },
+    {
+      "id": "person_diane_park",
+      "label": "Diane Park",
+      "type": "person",
+      "cluster": 4
+    },
+    {
+      "id": "person_fatima_reyes",
+      "label": "Fatima Reyes",
+      "type": "person",
+      "cluster": 4
+    },
+    {
+      "id": "person_leo_moretti",
+      "label": "Leo Moretti",
+      "type": "person",
+      "cluster": 4
+    },
+    {
+      "id": "person_katya_johannsen",
+      "label": "Katya Johannsen",
+      "type": "person",
+      "cluster": 4
+    },
+    {
+      "id": "person_tommy_santos",
+      "label": "Tommy Santos",
+      "type": "person",
+      "cluster": 4
+    },
+    {
+      "id": "person_bridget_novak",
+      "label": "Bridget Novak",
+      "type": "person",
+      "cluster": 4
+    },
+    {
+      "id": "person_hector_petrov",
+      "label": "Hector Petrov",
+      "type": "person",
+      "cluster": 4
+    },
+    {
+      "id": "org_crown_point",
+      "label": "Crown Point Industries",
+      "type": "organization",
+      "cluster": 4
+    },
+    {
+      "id": "org_apex_digital",
+      "label": "Apex Digital Solutions",
+      "type": "organization",
+      "cluster": 4
+    },
+    {
+      "id": "org_blue_horizon",
+      "label": "Blue Horizon Partners",
+      "type": "organization",
+      "cluster": 4
+    },
+    {
+      "id": "org_pinnacle_advisory",
+      "label": "Pinnacle Advisory",
+      "type": "organization",
+      "cluster": 4
+    },
+    {
+      "id": "org_vanguard_realty",
+      "label": "Vanguard Realty",
+      "type": "organization",
+      "cluster": 4
+    },
+    {
+      "id": "event_campaign_dinner_20230120",
+      "label": "Campaign Dinner 2023-01-20",
+      "type": "event",
+      "cluster": 4
+    },
+    {
+      "id": "event_contract_signing_20230315",
+      "label": "Contract Signing 2023-03-15",
+      "type": "event",
+      "cluster": 4
+    },
+    {
+      "id": "event_zoning_hearing_20230422",
+      "label": "Zoning Hearing 2023-04-22",
+      "type": "event",
+      "cluster": 4
+    },
+    {
+      "id": "event_fundraiser_20230630",
+      "label": "Fundraiser Gala 2023-06-30",
+      "type": "event",
+      "cluster": 4
+    },
+    {
+      "id": "event_bribery_incident_20230805",
+      "label": "Bribery Incident 2023-08-05",
+      "type": "event",
+      "cluster": 4
+    },
+    {
+      "id": "person_yuri_nakamura",
+      "label": "Yuri Nakamura",
+      "type": "person",
+      "cluster": 5
+    },
+    {
+      "id": "person_sarah_volkov",
+      "label": "Sarah Volkov",
+      "type": "person",
+      "cluster": 5
+    },
+    {
+      "id": "person_omar_chen",
+      "label": "Omar Chen",
+      "type": "person",
+      "cluster": 5
+    },
+    {
+      "id": "person_anya_cruz",
+      "label": "Anya Cruz",
+      "type": "person",
+      "cluster": 5
+    },
+    {
+      "id": "person_dominic_hassan",
+      "label": "Dominic Hassan",
+      "type": "person",
+      "cluster": 5
+    },
+    {
+      "id": "person_grace_kim",
+      "label": "Grace Kim",
+      "type": "person",
+      "cluster": 5
+    },
+    {
+      "id": "person_ivan_tanaka",
+      "label": "Ivan Tanaka",
+      "type": "person",
+      "cluster": 5
+    },
+    {
+      "id": "org_cobalt_systems",
+      "label": "Cobalt Systems",
+      "type": "organization",
+      "cluster": 5
+    },
+    {
+      "id": "org_quantum_analytics",
+      "label": "Quantum Analytics",
+      "type": "organization",
+      "cluster": 5
+    },
+    {
+      "id": "org_omega_distribution",
+      "label": "Omega Distribution",
+      "type": "organization",
+      "cluster": 5
+    },
+    {
+      "id": "event_data_breach_20230210",
+      "label": "Data Breach 2023-02-10",
+      "type": "event",
+      "cluster": 5
+    },
+    {
+      "id": "event_ransomware_20230505",
+      "label": "Ransomware Attack 2023-05-05",
+      "type": "event",
+      "cluster": 5
+    },
+    {
+      "id": "event_crypto_transfer_20230620",
+      "label": "Crypto Transfer 2023-06-20",
+      "type": "event",
+      "cluster": 5
+    },
+    {
+      "id": "event_server_seizure_20230815",
+      "label": "Server Seizure 2023-08-15",
+      "type": "event",
+      "cluster": 5
+    },
+    {
+      "id": "person_sergei_garcia",
+      "label": "Sergei Garcia",
+      "type": "person",
+      "cluster": 6
+    },
+    {
+      "id": "person_jade_mueller",
+      "label": "Jade Mueller",
+      "type": "person",
+      "cluster": 6
+    },
+    {
+      "id": "person_frank_dimitrov",
+      "label": "Frank Dimitrov",
+      "type": "person",
+      "cluster": 6
+    },
+    {
+      "id": "person_nadia_ferrara",
+      "label": "Nadia Ferrara",
+      "type": "person",
+      "cluster": 6
+    },
+    {
+      "id": "person_dante_obrien",
+      "label": "Dante O'Brien",
+      "type": "person",
+      "cluster": 6
+    },
+    {
+      "id": "person_vera_deluca",
+      "label": "Vera DeLuca",
+      "type": "person",
+      "cluster": 6
+    },
+    {
+      "id": "person_mei_kowalski",
+      "label": "Mei Kowalski",
+      "type": "person",
+      "cluster": 6
+    },
+    {
+      "id": "person_angelo_popov",
+      "label": "Angelo Popov",
+      "type": "person",
+      "cluster": 6
+    },
+    {
+      "id": "org_eclipse_ventures",
+      "label": "Eclipse Ventures",
+      "type": "organization",
+      "cluster": 6
+    },
+    {
+      "id": "org_harbourside",
+      "label": "Harbourside Consulting",
+      "type": "organization",
+      "cluster": 6
+    },
+    {
+      "id": "org_granite_shield",
+      "label": "Granite Shield Corp",
+      "type": "organization",
+      "cluster": 6
+    },
+    {
+      "id": "org_cardinal_point",
+      "label": "Cardinal Point LLC",
+      "type": "organization",
+      "cluster": 6
+    },
+    {
+      "id": "org_westbrook",
+      "label": "Westbrook Enterprises",
+      "type": "organization",
+      "cluster": 6
+    },
+    {
+      "id": "org_stark_assoc",
+      "label": "Stark & Associates",
+      "type": "organization",
+      "cluster": 6
+    },
+    {
+      "id": "org_5th_street",
+      "label": "5th Street Associates",
+      "type": "organization",
+      "cluster": 6
+    },
+    {
+      "id": "event_tip_received_20230105",
+      "label": "Anonymous Tip 2023-01-05",
+      "type": "event",
+      "cluster": 6
+    },
+    {
+      "id": "event_surveillance_overlap_20230320",
+      "label": "Surveillance Overlap 2023-03-20",
+      "type": "event",
+      "cluster": 6
+    },
+    {
+      "id": "event_phone_intercept_20230501",
+      "label": "Phone Intercept 2023-05-01",
+      "type": "event",
+      "cluster": 6
+    },
+    {
+      "id": "event_informant_debrief_20230715",
+      "label": "Informant Debrief 2023-07-15",
+      "type": "event",
+      "cluster": 6
+    }
+  ],
+  "edges": [
+    {
+      "source": "person_marcus_moretti",
+      "target": "person_luz_reyes",
+      "confidence": "high",
+      "label": "Operates"
+    },
+    {
+      "source": "person_marcus_moretti",
+      "target": "person_elena_rossi",
+      "confidence": "high",
+      "label": "Employed by"
+    },
+    {
+      "source": "person_marcus_moretti",
+      "target": "event_surveillance_20230520",
+      "confidence": "high",
+      "label": "Employed by"
+    },
+    {
+      "source": "person_marcus_moretti",
+      "target": "person_jade_santos",
+      "confidence": "high",
+      "label": "Member of"
+    },
+    {
+      "source": "org_meridian_holdings",
+      "target": "event_cash_drop_20230418",
+      "confidence": "high",
+      "label": "Organized"
+    },
+    {
+      "source": "org_meridian_holdings",
+      "target": "person_frank_brennan",
+      "confidence": "high",
+      "label": "Attended"
+    },
+    {
+      "source": "org_meridian_holdings",
+      "target": "org_serenity_imports",
+      "confidence": "high",
+      "label": "Member of"
+    },
+    {
+      "source": "org_meridian_holdings",
+      "target": "person_dante_marchetti",
+      "confidence": "high",
+      "label": "Member of"
+    },
+    {
+      "source": "org_meridian_holdings",
+      "target": "person_patrick_kowalski",
+      "confidence": "high",
+      "label": "Operates"
+    },
+    {
+      "source": "person_marcus_moretti",
+      "target": "org_meridian_holdings",
+      "confidence": "high",
+      "label": "Operates"
+    },
+    {
+      "source": "event_cash_drop_20230418",
+      "target": "person_rosa_garcia",
+      "confidence": "high",
+      "label": "Member of"
+    },
+    {
+      "source": "event_warehouse_mtg_20230115",
+      "target": "event_port_delivery_20230302",
+      "confidence": "high",
+      "label": "Coordinated"
+    },
+    {
+      "source": "org_novus_capital",
+      "target": "event_wire_transfer_20230205",
+      "confidence": "high",
+      "label": "Reports to"
+    },
+    {
+      "source": "org_novus_capital",
+      "target": "event_shell_filing_20230610",
+      "confidence": "high",
+      "label": "Operates"
+    },
+    {
+      "source": "org_novus_capital",
+      "target": "person_leo_tanaka",
+      "confidence": "high",
+      "label": "Supplier for"
+    },
+    {
+      "source": "org_novus_capital",
+      "target": "person_omar_hassan",
+      "confidence": "high",
+      "label": "Reports to"
+    },
+    {
+      "source": "org_novus_capital",
+      "target": "org_nexus_financial",
+      "confidence": "high",
+      "label": "Coordinated"
+    },
+    {
+      "source": "org_golden_phoenix",
+      "target": "person_chen_nakamura",
+      "confidence": "high",
+      "label": "Attended"
+    },
+    {
+      "source": "org_golden_phoenix",
+      "target": "event_wire_transfer_20230205",
+      "confidence": "high",
+      "label": "Operates"
+    },
+    {
+      "source": "org_golden_phoenix",
+      "target": "person_hector_cruz",
+      "confidence": "high",
+      "label": "Funds"
+    },
+    {
+      "source": "org_golden_phoenix",
+      "target": "org_nexus_financial",
+      "confidence": "high",
+      "label": "Reports to"
+    },
+    {
+      "source": "org_golden_phoenix",
+      "target": "event_shell_filing_20230610",
+      "confidence": "high",
+      "label": "Employed by"
+    },
+    {
+      "source": "org_novus_capital",
+      "target": "org_golden_phoenix",
+      "confidence": "high",
+      "label": "Organized"
+    },
+    {
+      "source": "person_omar_hassan",
+      "target": "event_wire_transfer_20230205",
+      "confidence": "high",
+      "label": "Organized"
+    },
+    {
+      "source": "person_nadia_popov",
+      "target": "person_chen_nakamura",
+      "confidence": "high",
+      "label": "Funds"
+    },
+    {
+      "source": "person_viktor_volkov",
+      "target": "person_mei_sato",
+      "confidence": "high",
+      "label": "Employed by"
+    },
+    {
+      "source": "person_viktor_volkov",
+      "target": "event_arms_deal_20230601",
+      "confidence": "high",
+      "label": "Attended"
+    },
+    {
+      "source": "person_viktor_volkov",
+      "target": "person_anya_bianchi",
+      "confidence": "high",
+      "label": "Reports to"
+    },
+    {
+      "source": "person_viktor_volkov",
+      "target": "person_grace_mueller",
+      "confidence": "high",
+      "label": "Member of"
+    },
+    {
+      "source": "org_atlas_security",
+      "target": "person_ivan_fedorov",
+      "confidence": "high",
+      "label": "Organized"
+    },
+    {
+      "source": "org_atlas_security",
+      "target": "person_grace_mueller",
+      "confidence": "high",
+      "label": "Attended"
+    },
+    {
+      "source": "org_atlas_security",
+      "target": "person_mei_sato",
+      "confidence": "high",
+      "label": "Attended"
+    },
+    {
+      "source": "org_atlas_security",
+      "target": "org_iron_gate",
+      "confidence": "high",
+      "label": "Employed by"
+    },
+    {
+      "source": "person_viktor_volkov",
+      "target": "org_atlas_security",
+      "confidence": "high",
+      "label": "Organized"
+    },
+    {
+      "source": "event_border_crossing_20230425",
+      "target": "person_yuri_petrov",
+      "confidence": "high",
+      "label": "Employed by"
+    },
+    {
+      "source": "org_crown_point",
+      "target": "org_blue_horizon",
+      "confidence": "high",
+      "label": "Supplier for"
+    },
+    {
+      "source": "org_crown_point",
+      "target": "event_fundraiser_20230630",
+      "confidence": "high",
+      "label": "Attended"
+    },
+    {
+      "source": "org_crown_point",
+      "target": "org_apex_digital",
+      "confidence": "high",
+      "label": "Reports to"
+    },
+    {
+      "source": "org_crown_point",
+      "target": "event_contract_signing_20230315",
+      "confidence": "high",
+      "label": "Employed by"
+    },
+    {
+      "source": "org_crown_point",
+      "target": "org_vanguard_realty",
+      "confidence": "high",
+      "label": "Supplier for"
+    },
+    {
+      "source": "person_james_okafor",
+      "target": "org_vanguard_realty",
+      "confidence": "high",
+      "label": "Employed by"
+    },
+    {
+      "source": "person_james_okafor",
+      "target": "event_campaign_dinner_20230120",
+      "confidence": "high",
+      "label": "Supplier for"
+    },
+    {
+      "source": "person_james_okafor",
+      "target": "event_bribery_incident_20230805",
+      "confidence": "high",
+      "label": "Supplier for"
+    },
+    {
+      "source": "person_james_okafor",
+      "target": "person_tommy_santos",
+      "confidence": "high",
+      "label": "Operates"
+    },
+    {
+      "source": "person_james_okafor",
+      "target": "person_leo_moretti",
+      "confidence": "high",
+      "label": "Organized"
+    },
+    {
+      "source": "org_crown_point",
+      "target": "person_james_okafor",
+      "confidence": "high",
+      "label": "Attended"
+    },
+    {
+      "source": "person_bridget_novak",
+      "target": "org_pinnacle_advisory",
+      "confidence": "high",
+      "label": "Directs"
+    },
+    {
+      "source": "org_cobalt_systems",
+      "target": "event_ransomware_20230505",
+      "confidence": "high",
+      "label": "Operates"
+    },
+    {
+      "source": "org_cobalt_systems",
+      "target": "event_data_breach_20230210",
+      "confidence": "high",
+      "label": "Attended"
+    },
+    {
+      "source": "org_cobalt_systems",
+      "target": "org_omega_distribution",
+      "confidence": "high",
+      "label": "Attended"
+    },
+    {
+      "source": "org_cobalt_systems",
+      "target": "person_grace_kim",
+      "confidence": "high",
+      "label": "Attended"
+    },
+    {
+      "source": "org_cobalt_systems",
+      "target": "person_ivan_tanaka",
+      "confidence": "high",
+      "label": "Attended"
+    },
+    {
+      "source": "person_yuri_nakamura",
+      "target": "event_data_breach_20230210",
+      "confidence": "high",
+      "label": "Coordinated"
+    },
+    {
+      "source": "person_yuri_nakamura",
+      "target": "org_omega_distribution",
+      "confidence": "high",
+      "label": "Member of"
+    },
+    {
+      "source": "person_yuri_nakamura",
+      "target": "person_sarah_volkov",
+      "confidence": "high",
+      "label": "Supplier for"
+    },
+    {
+      "source": "person_yuri_nakamura",
+      "target": "event_ransomware_20230505",
+      "confidence": "high",
+      "label": "Attended"
+    },
+    {
+      "source": "org_cobalt_systems",
+      "target": "person_yuri_nakamura",
+      "confidence": "high",
+      "label": "Operates"
+    },
+    {
+      "source": "org_quantum_analytics",
+      "target": "org_omega_distribution",
+      "confidence": "high",
+      "label": "Operates"
+    },
+    {
+      "source": "person_anya_cruz",
+      "target": "person_ivan_tanaka",
+      "confidence": "high",
+      "label": "Supplier for"
+    },
+    {
+      "source": "person_angelo_popov",
+      "target": "person_vera_deluca",
+      "confidence": "high",
+      "label": "Coordinated"
+    },
+    {
+      "source": "org_cardinal_point",
+      "target": "event_informant_debrief_20230715",
+      "confidence": "high",
+      "label": "Funds"
+    },
+    {
+      "source": "person_marcus_moretti",
+      "target": "person_chen_nakamura",
+      "confidence": "medium",
+      "label": "Financial link"
+    },
+    {
+      "source": "person_elena_rossi",
+      "target": "person_sarah_kim",
+      "confidence": "medium",
+      "label": "Same vehicle"
+    },
+    {
+      "source": "event_surveillance_20230520",
+      "target": "person_vera_johannsen",
+      "confidence": "medium",
+      "label": "Shared address"
+    },
+    {
+      "source": "person_frank_brennan",
+      "target": "org_pacific_rim",
+      "confidence": "medium",
+      "label": "Bank transfer"
+    },
+    {
+      "source": "person_rosa_garcia",
+      "target": "event_meeting_istanbul_20230708",
+      "confidence": "medium",
+      "label": "Email exchange"
+    },
+    {
+      "source": "person_elena_rossi",
+      "target": "person_grace_mueller",
+      "confidence": "medium",
+      "label": "Same vehicle"
+    },
+    {
+      "source": "person_nadia_popov",
+      "target": "person_dominic_novak",
+      "confidence": "medium",
+      "label": "Financial link"
+    },
+    {
+      "source": "event_account_review_20230401",
+      "target": "event_meeting_istanbul_20230708",
+      "confidence": "medium",
+      "label": "Mutual associate"
+    },
+    {
+      "source": "person_hector_cruz",
+      "target": "person_mei_sato",
+      "confidence": "medium",
+      "label": "Co-traveled"
+    },
+    {
+      "source": "person_chen_nakamura",
+      "target": "event_arms_deal_20230601",
+      "confidence": "medium",
+      "label": "Phone contact"
+    },
+    {
+      "source": "org_silverstone_trust",
+      "target": "person_hector_petrov",
+      "confidence": "medium",
+      "label": "Phone contact"
+    },
+    {
+      "source": "person_omar_hassan",
+      "target": "event_bribery_incident_20230805",
+      "confidence": "medium",
+      "label": "Email exchange"
+    },
+    {
+      "source": "person_chen_nakamura",
+      "target": "event_campaign_dinner_20230120",
+      "confidence": "medium",
+      "label": "Co-traveled"
+    },
+    {
+      "source": "event_account_review_20230401",
+      "target": "person_katya_johannsen",
+      "confidence": "medium",
+      "label": "Phone contact"
+    },
+    {
+      "source": "org_pacific_rim",
+      "target": "org_quantum_analytics",
+      "confidence": "medium",
+      "label": "Seen with"
+    },
+    {
+      "source": "person_grace_mueller",
+      "target": "event_server_seizure_20230815",
+      "confidence": "medium",
+      "label": "Same vehicle"
+    },
+    {
+      "source": "event_meeting_istanbul_20230708",
+      "target": "person_anya_cruz",
+      "confidence": "medium",
+      "label": "Mutual associate"
+    },
+    {
+      "source": "person_dominic_novak",
+      "target": "person_sarah_volkov",
+      "confidence": "medium",
+      "label": "Email exchange"
+    },
+    {
+      "source": "person_hector_petrov",
+      "target": "person_dominic_hassan",
+      "confidence": "medium",
+      "label": "Bank transfer"
+    },
+    {
+      "source": "person_leo_moretti",
+      "target": "person_sarah_volkov",
+      "confidence": "medium",
+      "label": "Shared address"
+    },
+    {
+      "source": "person_fatima_reyes",
+      "target": "event_crypto_transfer_20230620",
+      "confidence": "medium",
+      "label": "Seen with"
+    },
+    {
+      "source": "person_diane_park",
+      "target": "org_omega_distribution",
+      "confidence": "medium",
+      "label": "Same vehicle"
+    },
+    {
+      "source": "org_vanguard_realty",
+      "target": "person_ivan_tanaka",
+      "confidence": "medium",
+      "label": "Seen with"
+    },
+    {
+      "source": "person_tommy_deluca",
+      "target": "person_bridget_novak",
+      "confidence": "medium",
+      "label": "Attended same event"
+    },
+    {
+      "source": "person_elena_rossi",
+      "target": "event_fundraiser_20230630",
+      "confidence": "medium",
+      "label": "Email exchange"
+    },
+    {
+      "source": "person_angelo_ferrara",
+      "target": "org_pinnacle_advisory",
+      "confidence": "medium",
+      "label": "Same vehicle"
+    },
+    {
+      "source": "person_marcus_moretti",
+      "target": "event_bribery_incident_20230805",
+      "confidence": "medium",
+      "label": "Shared address"
+    },
+    {
+      "source": "event_port_delivery_20230302",
+      "target": "person_sarah_volkov",
+      "confidence": "medium",
+      "label": "Mutual associate"
+    },
+    {
+      "source": "person_tommy_deluca",
+      "target": "org_quantum_analytics",
+      "confidence": "medium",
+      "label": "Co-traveled"
+    },
+    {
+      "source": "org_meridian_holdings",
+      "target": "org_omega_distribution",
+      "confidence": "medium",
+      "label": "Co-traveled"
+    },
+    {
+      "source": "event_surveillance_20230520",
+      "target": "event_ransomware_20230505",
+      "confidence": "medium",
+      "label": "Email exchange"
+    },
+    {
+      "source": "person_elena_rossi",
+      "target": "person_ivan_tanaka",
+      "confidence": "medium",
+      "label": "Bank transfer"
+    },
+    {
+      "source": "person_nadia_popov",
+      "target": "event_ransomware_20230505",
+      "confidence": "medium",
+      "label": "Mutual associate"
+    },
+    {
+      "source": "org_novus_capital",
+      "target": "event_data_breach_20230210",
+      "confidence": "medium",
+      "label": "Mutual associate"
+    },
+    {
+      "source": "person_omar_hassan",
+      "target": "person_anya_cruz",
+      "confidence": "medium",
+      "label": "Financial link"
+    },
+    {
+      "source": "person_yuri_petrov",
+      "target": "person_leo_moretti",
+      "confidence": "medium",
+      "label": "Email exchange"
+    },
+    {
+      "source": "org_pacific_rim",
+      "target": "person_katya_johannsen",
+      "confidence": "medium",
+      "label": "Attended same event"
+    },
+    {
+      "source": "person_viktor_volkov",
+      "target": "event_campaign_dinner_20230120",
+      "confidence": "medium",
+      "label": "Co-traveled"
+    },
+    {
+      "source": "person_ivan_fedorov",
+      "target": "event_bribery_incident_20230805",
+      "confidence": "medium",
+      "label": "Attended same event"
+    },
+    {
+      "source": "event_weapons_cache_20230310",
+      "target": "org_apex_digital",
+      "confidence": "medium",
+      "label": "Shared address"
+    },
+    {
+      "source": "person_frank_brennan",
+      "target": "event_port_delivery_20230302",
+      "confidence": "medium",
+      "label": "Attended same event"
+    },
+    {
+      "source": "person_jade_santos",
+      "target": "person_elena_rossi",
+      "confidence": "medium",
+      "label": "Email exchange"
+    },
+    {
+      "source": "org_red_line_logistics",
+      "target": "person_jade_santos",
+      "confidence": "medium",
+      "label": "Shared address"
+    },
+    {
+      "source": "org_meridian_holdings",
+      "target": "person_elena_rossi",
+      "confidence": "medium",
+      "label": "Mutual associate"
+    },
+    {
+      "source": "event_surveillance_20230520",
+      "target": "org_red_line_logistics",
+      "confidence": "medium",
+      "label": "Email exchange"
+    },
+    {
+      "source": "person_rosa_garcia",
+      "target": "person_dante_marchetti",
+      "confidence": "medium",
+      "label": "Bank transfer"
+    },
+    {
+      "source": "event_account_review_20230401",
+      "target": "person_hector_cruz",
+      "confidence": "medium",
+      "label": "Co-traveled"
+    },
+    {
+      "source": "org_golden_phoenix",
+      "target": "person_leo_tanaka",
+      "confidence": "medium",
+      "label": "Co-traveled"
+    },
+    {
+      "source": "person_hector_cruz",
+      "target": "person_bridget_obrien",
+      "confidence": "medium",
+      "label": "Same vehicle"
+    },
+    {
+      "source": "org_nexus_financial",
+      "target": "person_omar_hassan",
+      "confidence": "medium",
+      "label": "Co-traveled"
+    },
+    {
+      "source": "org_silverstone_trust",
+      "target": "org_novus_capital",
+      "confidence": "medium",
+      "label": "Attended same event"
+    },
+    {
+      "source": "person_mei_sato",
+      "target": "event_meeting_istanbul_20230708",
+      "confidence": "medium",
+      "label": "Shared address"
+    },
+    {
+      "source": "person_dominic_novak",
+      "target": "person_sergei_kozlov",
+      "confidence": "medium",
+      "label": "Mutual associate"
+    },
+    {
+      "source": "org_atlas_security",
+      "target": "event_border_crossing_20230425",
+      "confidence": "medium",
+      "label": "Seen with"
+    },
+    {
+      "source": "person_mei_sato",
+      "target": "person_anya_bianchi",
+      "confidence": "medium",
+      "label": "Seen with"
+    },
+    {
+      "source": "person_anya_bianchi",
+      "target": "person_ivan_fedorov",
+      "confidence": "medium",
+      "label": "Phone contact"
+    },
+    {
+      "source": "person_grace_mueller",
+      "target": "person_katya_dimitrov",
+      "confidence": "medium",
+      "label": "Same vehicle"
+    },
+    {
+      "source": "person_james_okafor",
+      "target": "org_pinnacle_advisory",
+      "confidence": "medium",
+      "label": "Mutual associate"
+    },
+    {
+      "source": "event_campaign_dinner_20230120",
+      "target": "person_tommy_santos",
+      "confidence": "medium",
+      "label": "Financial link"
+    },
+    {
+      "source": "org_blue_horizon",
+      "target": "person_james_okafor",
+      "confidence": "medium",
+      "label": "Same vehicle"
+    },
+    {
+      "source": "person_hector_petrov",
+      "target": "org_pinnacle_advisory",
+      "confidence": "medium",
+      "label": "Phone contact"
+    },
+    {
+      "source": "event_contract_signing_20230315",
+      "target": "event_fundraiser_20230630",
+      "confidence": "medium",
+      "label": "Email exchange"
+    },
+    {
+      "source": "person_katya_johannsen",
+      "target": "person_tommy_santos",
+      "confidence": "medium",
+      "label": "Seen with"
+    },
+    {
+      "source": "person_diane_park",
+      "target": "event_fundraiser_20230630",
+      "confidence": "medium",
+      "label": "Financial link"
+    },
+    {
+      "source": "person_hector_petrov",
+      "target": "org_crown_point",
+      "confidence": "medium",
+      "label": "Co-traveled"
+    },
+    {
+      "source": "person_fatima_reyes",
+      "target": "org_blue_horizon",
+      "confidence": "medium",
+      "label": "Bank transfer"
+    },
+    {
+      "source": "org_blue_horizon",
+      "target": "person_hector_petrov",
+      "confidence": "medium",
+      "label": "Attended same event"
+    },
+    {
+      "source": "person_anya_cruz",
+      "target": "person_omar_chen",
+      "confidence": "medium",
+      "label": "Shared address"
+    },
+    {
+      "source": "org_cobalt_systems",
+      "target": "event_server_seizure_20230815",
+      "confidence": "medium",
+      "label": "Phone contact"
+    },
+    {
+      "source": "org_quantum_analytics",
+      "target": "person_omar_chen",
+      "confidence": "medium",
+      "label": "Email exchange"
+    },
+    {
+      "source": "person_grace_kim",
+      "target": "person_dominic_hassan",
+      "confidence": "medium",
+      "label": "Mutual associate"
+    },
+    {
+      "source": "org_cobalt_systems",
+      "target": "person_omar_chen",
+      "confidence": "medium",
+      "label": "Email exchange"
+    },
+    {
+      "source": "person_anya_cruz",
+      "target": "event_crypto_transfer_20230620",
+      "confidence": "medium",
+      "label": "Bank transfer"
+    },
+    {
+      "source": "person_dominic_hassan",
+      "target": "person_sarah_volkov",
+      "confidence": "medium",
+      "label": "Phone contact"
+    },
+    {
+      "source": "person_dominic_hassan",
+      "target": "person_anya_cruz",
+      "confidence": "medium",
+      "label": "Shared address"
+    },
+    {
+      "source": "event_data_breach_20230210",
+      "target": "event_server_seizure_20230815",
+      "confidence": "medium",
+      "label": "Same vehicle"
+    },
+    {
+      "source": "person_dominic_hassan",
+      "target": "event_crypto_transfer_20230620",
+      "confidence": "medium",
+      "label": "Same vehicle"
+    },
+    {
+      "source": "person_mei_kowalski",
+      "target": "org_cardinal_point",
+      "confidence": "medium",
+      "label": "Phone contact"
+    },
+    {
+      "source": "event_informant_debrief_20230715",
+      "target": "person_mei_kowalski",
+      "confidence": "medium",
+      "label": "Mutual associate"
+    },
+    {
+      "source": "org_stark_assoc",
+      "target": "org_cardinal_point",
+      "confidence": "medium",
+      "label": "Co-traveled"
+    },
+    {
+      "source": "person_sergei_garcia",
+      "target": "person_vera_deluca",
+      "confidence": "medium",
+      "label": "Email exchange"
+    },
+    {
+      "source": "event_phone_intercept_20230501",
+      "target": "person_frank_dimitrov",
+      "confidence": "medium",
+      "label": "Mutual associate"
+    },
+    {
+      "source": "org_5th_street",
+      "target": "person_angelo_popov",
+      "confidence": "medium",
+      "label": "Email exchange"
+    },
+    {
+      "source": "org_harbourside",
+      "target": "person_vera_deluca",
+      "confidence": "medium",
+      "label": "Co-traveled"
+    },
+    {
+      "source": "person_jade_mueller",
+      "target": "person_frank_dimitrov",
+      "confidence": "medium",
+      "label": "Shared address"
+    },
+    {
+      "source": "event_surveillance_overlap_20230320",
+      "target": "person_frank_dimitrov",
+      "confidence": "medium",
+      "label": "Email exchange"
+    },
+    {
+      "source": "person_sergei_kozlov",
+      "target": "person_sarah_kim",
+      "confidence": "medium",
+      "label": "Email exchange"
+    },
+    {
+      "source": "event_crypto_transfer_20230620",
+      "target": "person_hector_petrov",
+      "confidence": "medium",
+      "label": "Same vehicle"
+    },
+    {
+      "source": "person_mei_kowalski",
+      "target": "org_harbourside",
+      "confidence": "medium",
+      "label": "Co-traveled"
+    },
+    {
+      "source": "person_diane_park",
+      "target": "person_anya_bianchi",
+      "confidence": "medium",
+      "label": "Bank transfer"
+    },
+    {
+      "source": "org_novus_capital",
+      "target": "person_rosa_garcia",
+      "confidence": "medium",
+      "label": "Email exchange"
+    },
+    {
+      "source": "person_elena_rossi",
+      "target": "org_red_line_logistics",
+      "confidence": "medium",
+      "label": "Mutual associate"
+    },
+    {
+      "source": "event_surveillance_20230520",
+      "target": "person_nadia_popov",
+      "confidence": "medium",
+      "label": "Phone contact"
+    },
+    {
+      "source": "person_anya_bianchi",
+      "target": "event_tip_received_20230105",
+      "confidence": "medium",
+      "label": "Shared address"
+    },
+    {
+      "source": "person_dominic_hassan",
+      "target": "person_dante_obrien",
+      "confidence": "medium",
+      "label": "Bank transfer"
+    },
+    {
+      "source": "org_golden_phoenix",
+      "target": "person_jade_mueller",
+      "confidence": "medium",
+      "label": "Attended same event"
+    },
+    {
+      "source": "org_novus_capital",
+      "target": "person_dante_marchetti",
+      "confidence": "medium",
+      "label": "Mutual associate"
+    },
+    {
+      "source": "org_quantum_analytics",
+      "target": "org_eclipse_ventures",
+      "confidence": "medium",
+      "label": "Shared address"
+    },
+    {
+      "source": "org_novus_capital",
+      "target": "org_vanguard_realty",
+      "confidence": "medium",
+      "label": "Email exchange"
+    },
+    {
+      "source": "org_silverstone_trust",
+      "target": "org_eclipse_ventures",
+      "confidence": "medium",
+      "label": "Mutual associate"
+    },
+    {
+      "source": "person_jade_santos",
+      "target": "event_ransomware_20230505",
+      "confidence": "low",
+      "label": "Data correlation"
+    },
+    {
+      "source": "person_tommy_deluca",
+      "target": "person_sarah_volkov",
+      "confidence": "low",
+      "label": "Algorithm flagged"
+    },
+    {
+      "source": "person_rosa_garcia",
+      "target": "event_data_breach_20230210",
+      "confidence": "low",
+      "label": "Travel pattern match"
+    },
+    {
+      "source": "person_angelo_ferrara",
+      "target": "org_omega_distribution",
+      "confidence": "low",
+      "label": "Surveillance overlap"
+    },
+    {
+      "source": "event_cash_drop_20230418",
+      "target": "org_quantum_analytics",
+      "confidence": "low",
+      "label": "Data correlation"
+    },
+    {
+      "source": "person_omar_hassan",
+      "target": "person_fatima_reyes",
+      "confidence": "low",
+      "label": "Surveillance overlap"
+    },
+    {
+      "source": "person_chen_nakamura",
+      "target": "event_bribery_incident_20230805",
+      "confidence": "low",
+      "label": "Travel pattern match"
+    },
+    {
+      "source": "person_vera_johannsen",
+      "target": "person_hector_petrov",
+      "confidence": "low",
+      "label": "Social media link"
+    },
+    {
+      "source": "org_golden_phoenix",
+      "target": "person_bridget_novak",
+      "confidence": "low",
+      "label": "Social media link"
+    },
+    {
+      "source": "org_novus_capital",
+      "target": "org_apex_digital",
+      "confidence": "low",
+      "label": "Behavioral pattern"
+    },
+    {
+      "source": "person_katya_dimitrov",
+      "target": "event_port_delivery_20230302",
+      "confidence": "low",
+      "label": "Surveillance overlap"
+    },
+    {
+      "source": "person_mei_sato",
+      "target": "person_jade_santos",
+      "confidence": "low",
+      "label": "Financial anomaly"
+    },
+    {
+      "source": "person_ivan_fedorov",
+      "target": "person_tommy_deluca",
+      "confidence": "low",
+      "label": "Possible connection"
+    },
+    {
+      "source": "person_dominic_novak",
+      "target": "person_dante_marchetti",
+      "confidence": "low",
+      "label": "Data correlation"
+    },
+    {
+      "source": "org_pacific_rim",
+      "target": "event_warehouse_mtg_20230115",
+      "confidence": "low",
+      "label": "Social media link"
+    },
+    {
+      "source": "person_grace_mueller",
+      "target": "person_rosa_garcia",
+      "confidence": "low",
+      "label": "Travel pattern match"
+    },
+    {
+      "source": "event_arms_deal_20230601",
+      "target": "org_meridian_holdings",
+      "confidence": "low",
+      "label": "Algorithm flagged"
+    },
+    {
+      "source": "org_crown_point",
+      "target": "person_dominic_novak",
+      "confidence": "low",
+      "label": "Phone metadata"
+    },
+    {
+      "source": "person_katya_johannsen",
+      "target": "person_grace_mueller",
+      "confidence": "low",
+      "label": "Financial anomaly"
+    },
+    {
+      "source": "person_bridget_novak",
+      "target": "event_weapons_cache_20230310",
+      "confidence": "low",
+      "label": "Behavioral pattern"
+    },
+    {
+      "source": "event_zoning_hearing_20230422",
+      "target": "person_anya_bianchi",
+      "confidence": "low",
+      "label": "Phone metadata"
+    },
+    {
+      "source": "org_blue_horizon",
+      "target": "event_meeting_istanbul_20230708",
+      "confidence": "low",
+      "label": "Phone metadata"
+    },
+    {
+      "source": "person_diane_park",
+      "target": "event_border_crossing_20230425",
+      "confidence": "low",
+      "label": "Surveillance overlap"
+    },
+    {
+      "source": "person_fatima_reyes",
+      "target": "person_mei_sato",
+      "confidence": "low",
+      "label": "Data correlation"
+    },
+    {
+      "source": "org_quantum_analytics",
+      "target": "person_leo_tanaka",
+      "confidence": "low",
+      "label": "Behavioral pattern"
+    },
+    {
+      "source": "event_data_breach_20230210",
+      "target": "person_omar_hassan",
+      "confidence": "low",
+      "label": "Tip received"
+    },
+    {
+      "source": "person_dominic_hassan",
+      "target": "org_golden_phoenix",
+      "confidence": "low",
+      "label": "Proximity alert"
+    },
+    {
+      "source": "person_yuri_nakamura",
+      "target": "person_hector_cruz",
+      "confidence": "low",
+      "label": "Data correlation"
+    },
+    {
+      "source": "person_anya_cruz",
+      "target": "event_account_review_20230401",
+      "confidence": "low",
+      "label": "Social media link"
+    },
+    {
+      "source": "org_omega_distribution",
+      "target": "org_novus_capital",
+      "confidence": "low",
+      "label": "Surveillance overlap"
+    },
+    {
+      "source": "person_ivan_tanaka",
+      "target": "org_silverstone_trust",
+      "confidence": "low",
+      "label": "Data correlation"
+    },
+    {
+      "source": "person_luz_reyes",
+      "target": "event_informant_debrief_20230715",
+      "confidence": "low",
+      "label": "Algorithm flagged"
+    },
+    {
+      "source": "person_tommy_deluca",
+      "target": "org_westbrook",
+      "confidence": "low",
+      "label": "Surveillance overlap"
+    },
+    {
+      "source": "event_port_delivery_20230302",
+      "target": "event_phone_intercept_20230501",
+      "confidence": "low",
+      "label": "Phone metadata"
+    },
+    {
+      "source": "org_red_line_logistics",
+      "target": "org_cardinal_point",
+      "confidence": "low",
+      "label": "Financial anomaly"
+    },
+    {
+      "source": "org_nexus_financial",
+      "target": "org_granite_shield",
+      "confidence": "low",
+      "label": "Financial anomaly"
+    },
+    {
+      "source": "event_audit_meeting_20230515",
+      "target": "person_nadia_ferrara",
+      "confidence": "low",
+      "label": "Travel pattern match"
+    },
+    {
+      "source": "person_vera_johannsen",
+      "target": "event_phone_intercept_20230501",
+      "confidence": "low",
+      "label": "Tip received"
+    },
+    {
+      "source": "person_sarah_kim",
+      "target": "org_5th_street",
+      "confidence": "low",
+      "label": "Surveillance overlap"
+    },
+    {
+      "source": "person_leo_tanaka",
+      "target": "person_frank_dimitrov",
+      "confidence": "low",
+      "label": "Phone metadata"
+    },
+    {
+      "source": "person_viktor_volkov",
+      "target": "event_phone_intercept_20230501",
+      "confidence": "low",
+      "label": "Travel pattern match"
+    },
+    {
+      "source": "person_mei_sato",
+      "target": "org_westbrook",
+      "confidence": "low",
+      "label": "Data correlation"
+    },
+    {
+      "source": "person_ivan_fedorov",
+      "target": "org_eclipse_ventures",
+      "confidence": "low",
+      "label": "Proximity alert"
+    },
+    {
+      "source": "person_grace_mueller",
+      "target": "org_granite_shield",
+      "confidence": "low",
+      "label": "Financial anomaly"
+    },
+    {
+      "source": "person_anya_bianchi",
+      "target": "person_dante_obrien",
+      "confidence": "low",
+      "label": "Phone metadata"
+    },
+    {
+      "source": "org_vanguard_realty",
+      "target": "org_westbrook",
+      "confidence": "low",
+      "label": "Surveillance overlap"
+    },
+    {
+      "source": "org_pinnacle_advisory",
+      "target": "org_cardinal_point",
+      "confidence": "low",
+      "label": "Phone metadata"
+    },
+    {
+      "source": "person_leo_moretti",
+      "target": "org_5th_street",
+      "confidence": "low",
+      "label": "Phone metadata"
+    },
+    {
+      "source": "person_katya_johannsen",
+      "target": "org_stark_assoc",
+      "confidence": "low",
+      "label": "Tip received"
+    },
+    {
+      "source": "person_dominic_hassan",
+      "target": "person_vera_deluca",
+      "confidence": "low",
+      "label": "Surveillance overlap"
+    },
+    {
+      "source": "person_ivan_tanaka",
+      "target": "org_stark_assoc",
+      "confidence": "low",
+      "label": "Behavioral pattern"
+    },
+    {
+      "source": "event_ransomware_20230505",
+      "target": "event_informant_debrief_20230715",
+      "confidence": "low",
+      "label": "Tip received"
+    },
+    {
+      "source": "org_quantum_analytics",
+      "target": "event_surveillance_overlap_20230320",
+      "confidence": "low",
+      "label": "Tip received"
+    },
+    {
+      "source": "event_crypto_transfer_20230620",
+      "target": "person_sergei_garcia",
+      "confidence": "low",
+      "label": "Tip received"
+    },
+    {
+      "source": "person_yuri_nakamura",
+      "target": "event_tip_received_20230105",
+      "confidence": "low",
+      "label": "Tip received"
+    },
+    {
+      "source": "event_server_seizure_20230815",
+      "target": "person_dante_obrien",
+      "confidence": "low",
+      "label": "Social media link"
+    },
+    {
+      "source": "person_dante_obrien",
+      "target": "org_nexus_financial",
+      "confidence": "low",
+      "label": "Possible connection"
+    },
+    {
+      "source": "event_tip_received_20230105",
+      "target": "event_campaign_dinner_20230120",
+      "confidence": "low",
+      "label": "Algorithm flagged"
+    },
+    {
+      "source": "org_5th_street",
+      "target": "person_grace_mueller",
+      "confidence": "low",
+      "label": "Surveillance overlap"
+    },
+    {
+      "source": "person_vera_deluca",
+      "target": "event_arms_deal_20230601",
+      "confidence": "low",
+      "label": "Data correlation"
+    },
+    {
+      "source": "person_nadia_ferrara",
+      "target": "person_ivan_tanaka",
+      "confidence": "low",
+      "label": "Data correlation"
+    },
+    {
+      "source": "event_informant_debrief_20230715",
+      "target": "person_nadia_popov",
+      "confidence": "low",
+      "label": "Unconfirmed report"
+    },
+    {
+      "source": "person_mei_kowalski",
+      "target": "person_omar_hassan",
+      "confidence": "low",
+      "label": "Unconfirmed report"
+    },
+    {
+      "source": "person_nadia_ferrara",
+      "target": "person_elena_rossi",
+      "confidence": "low",
+      "label": "Surveillance overlap"
+    },
+    {
+      "source": "person_dante_obrien",
+      "target": "person_mei_sato",
+      "confidence": "low",
+      "label": "Algorithm flagged"
+    },
+    {
+      "source": "person_dante_obrien",
+      "target": "person_katya_dimitrov",
+      "confidence": "low",
+      "label": "Data correlation"
+    },
+    {
+      "source": "org_stark_assoc",
+      "target": "event_cash_drop_20230418",
+      "confidence": "low",
+      "label": "Surveillance overlap"
+    },
+    {
+      "source": "event_surveillance_overlap_20230320",
+      "target": "event_fundraiser_20230630",
+      "confidence": "low",
+      "label": "Social media link"
+    },
+    {
+      "source": "org_stark_assoc",
+      "target": "org_iron_gate",
+      "confidence": "low",
+      "label": "Unconfirmed report"
+    },
+    {
+      "source": "event_surveillance_overlap_20230320",
+      "target": "person_yuri_petrov",
+      "confidence": "low",
+      "label": "Social media link"
+    },
+    {
+      "source": "person_frank_dimitrov",
+      "target": "person_bridget_obrien",
+      "confidence": "low",
+      "label": "Financial anomaly"
+    },
+    {
+      "source": "org_westbrook",
+      "target": "person_leo_moretti",
+      "confidence": "low",
+      "label": "Possible connection"
+    },
+    {
+      "source": "person_jade_mueller",
+      "target": "event_wire_transfer_20230205",
+      "confidence": "low",
+      "label": "Unconfirmed report"
+    },
+    {
+      "source": "event_informant_debrief_20230715",
+      "target": "person_dante_marchetti",
+      "confidence": "low",
+      "label": "Phone metadata"
+    },
+    {
+      "source": "person_angelo_popov",
+      "target": "person_marcus_moretti",
+      "confidence": "low",
+      "label": "Phone metadata"
+    },
+    {
+      "source": "person_nadia_ferrara",
+      "target": "person_anya_cruz",
+      "confidence": "low",
+      "label": "Data correlation"
+    },
+    {
+      "source": "person_frank_dimitrov",
+      "target": "org_cobalt_systems",
+      "confidence": "low",
+      "label": "Behavioral pattern"
+    },
+    {
+      "source": "person_mei_kowalski",
+      "target": "person_yuri_nakamura",
+      "confidence": "low",
+      "label": "Data correlation"
+    },
+    {
+      "source": "org_stark_assoc",
+      "target": "person_ivan_fedorov",
+      "confidence": "low",
+      "label": "Proximity alert"
+    },
+    {
+      "source": "person_mei_kowalski",
+      "target": "person_vera_johannsen",
+      "confidence": "low",
+      "label": "Unconfirmed report"
+    },
+    {
+      "source": "org_cardinal_point",
+      "target": "event_surveillance_20230520",
+      "confidence": "low",
+      "label": "Travel pattern match"
+    },
+    {
+      "source": "org_stark_assoc",
+      "target": "person_diane_park",
+      "confidence": "low",
+      "label": "Phone metadata"
+    },
+    {
+      "source": "person_sergei_garcia",
+      "target": "org_crown_point",
+      "confidence": "low",
+      "label": "Data correlation"
+    },
+    {
+      "source": "org_harbourside",
+      "target": "person_hector_petrov",
+      "confidence": "low",
+      "label": "Phone metadata"
+    },
+    {
+      "source": "person_jade_mueller",
+      "target": "event_crypto_transfer_20230620",
+      "confidence": "low",
+      "label": "Behavioral pattern"
+    },
+    {
+      "source": "org_cardinal_point",
+      "target": "person_grace_kim",
+      "confidence": "low",
+      "label": "Financial anomaly"
+    },
+    {
+      "source": "org_cardinal_point",
+      "target": "event_port_delivery_20230302",
+      "confidence": "low",
+      "label": "Social media link"
+    },
+    {
+      "source": "event_phone_intercept_20230501",
+      "target": "event_weapons_cache_20230310",
+      "confidence": "low",
+      "label": "Surveillance overlap"
+    },
+    {
+      "source": "person_sergei_garcia",
+      "target": "person_sarah_volkov",
+      "confidence": "low",
+      "label": "Phone metadata"
+    },
+    {
+      "source": "person_frank_dimitrov",
+      "target": "event_data_breach_20230210",
+      "confidence": "low",
+      "label": "Algorithm flagged"
+    },
+    {
+      "source": "event_surveillance_overlap_20230320",
+      "target": "person_tommy_santos",
+      "confidence": "low",
+      "label": "Social media link"
+    },
+    {
+      "source": "person_sergei_garcia",
+      "target": "org_meridian_holdings",
+      "confidence": "low",
+      "label": "Behavioral pattern"
+    },
+    {
+      "source": "event_surveillance_overlap_20230320",
+      "target": "person_patrick_kowalski",
+      "confidence": "low",
+      "label": "Surveillance overlap"
+    },
+    {
+      "source": "person_jade_mueller",
+      "target": "person_chen_nakamura",
+      "confidence": "low",
+      "label": "Algorithm flagged"
+    },
+    {
+      "source": "person_angelo_popov",
+      "target": "person_sarah_kim",
+      "confidence": "low",
+      "label": "Unconfirmed report"
+    },
+    {
+      "source": "org_westbrook",
+      "target": "org_red_line_logistics",
+      "confidence": "low",
+      "label": "Tip received"
+    },
+    {
+      "source": "person_mei_kowalski",
+      "target": "person_hector_cruz",
+      "confidence": "low",
+      "label": "Surveillance overlap"
+    },
+    {
+      "source": "event_phone_intercept_20230501",
+      "target": "person_dominic_novak",
+      "confidence": "low",
+      "label": "Behavioral pattern"
+    },
+    {
+      "source": "person_sergei_garcia",
+      "target": "org_atlas_security",
+      "confidence": "low",
+      "label": "Behavioral pattern"
+    },
+    {
+      "source": "person_mei_kowalski",
+      "target": "person_rosa_garcia",
+      "confidence": "low",
+      "label": "Data correlation"
+    },
+    {
+      "source": "org_5th_street",
+      "target": "person_leo_tanaka",
+      "confidence": "low",
+      "label": "Algorithm flagged"
+    },
+    {
+      "source": "org_harbourside",
+      "target": "org_quantum_analytics",
+      "confidence": "low",
+      "label": "Algorithm flagged"
+    },
+    {
+      "source": "person_nadia_ferrara",
+      "target": "person_jade_santos",
+      "confidence": "low",
+      "label": "Behavioral pattern"
+    },
+    {
+      "source": "event_informant_debrief_20230715",
+      "target": "org_golden_phoenix",
+      "confidence": "low",
+      "label": "Phone metadata"
+    },
+    {
+      "source": "event_surveillance_overlap_20230320",
+      "target": "person_dominic_hassan",
+      "confidence": "low",
+      "label": "Social media link"
+    },
+    {
+      "source": "org_granite_shield",
+      "target": "event_warehouse_mtg_20230115",
+      "confidence": "low",
+      "label": "Data correlation"
+    },
+    {
+      "source": "person_patrick_kowalski",
+      "target": "person_frank_dimitrov",
+      "confidence": "low",
+      "label": "Algorithm flagged"
+    },
+    {
+      "source": "person_tommy_deluca",
+      "target": "person_ivan_tanaka",
+      "confidence": "low",
+      "label": "Travel pattern match"
+    },
+    {
+      "source": "person_fatima_reyes",
+      "target": "person_yuri_nakamura",
+      "confidence": "low",
+      "label": "Unconfirmed report"
+    },
+    {
+      "source": "event_surveillance_20230520",
+      "target": "org_meridian_holdings",
+      "confidence": "low",
+      "label": "Unconfirmed report"
+    },
+    {
+      "source": "event_arms_deal_20230601",
+      "target": "event_port_delivery_20230302",
+      "confidence": "low",
+      "label": "Tip received"
+    },
+    {
+      "source": "event_server_seizure_20230815",
+      "target": "org_serenity_imports",
+      "confidence": "low",
+      "label": "Travel pattern match"
+    },
+    {
+      "source": "person_tommy_deluca",
+      "target": "org_serenity_imports",
+      "confidence": "low",
+      "label": "Algorithm flagged"
+    },
+    {
+      "source": "person_tommy_santos",
+      "target": "event_phone_intercept_20230501",
+      "confidence": "low",
+      "label": "Phone metadata"
+    },
+    {
+      "source": "person_sarah_volkov",
+      "target": "person_anya_bianchi",
+      "confidence": "low",
+      "label": "Travel pattern match"
+    },
+    {
+      "source": "event_weapons_cache_20230310",
+      "target": "person_frank_brennan",
+      "confidence": "low",
+      "label": "Travel pattern match"
+    },
+    {
+      "source": "org_stark_assoc",
+      "target": "person_chen_nakamura",
+      "confidence": "low",
+      "label": "Possible connection"
+    },
+    {
+      "source": "org_granite_shield",
+      "target": "event_server_seizure_20230815",
+      "confidence": "low",
+      "label": "Surveillance overlap"
+    },
+    {
+      "source": "person_dante_marchetti",
+      "target": "person_bridget_novak",
+      "confidence": "low",
+      "label": "Phone metadata"
+    },
+    {
+      "source": "event_meeting_istanbul_20230708",
+      "target": "event_ransomware_20230505",
+      "confidence": "low",
+      "label": "Possible connection"
+    },
+    {
+      "source": "person_frank_dimitrov",
+      "target": "org_iron_gate",
+      "confidence": "low",
+      "label": "Unconfirmed report"
+    },
+    {
+      "source": "org_stark_assoc",
+      "target": "event_informant_debrief_20230715",
+      "confidence": "low",
+      "label": "Phone metadata"
+    },
+    {
+      "source": "person_dominic_hassan",
+      "target": "event_contract_signing_20230315",
+      "confidence": "low",
+      "label": "Proximity alert"
+    },
+    {
+      "source": "person_tommy_deluca",
+      "target": "org_nexus_financial",
+      "confidence": "low",
+      "label": "Financial anomaly"
+    },
+    {
+      "source": "person_leo_tanaka",
+      "target": "person_yuri_nakamura",
+      "confidence": "low",
+      "label": "Phone metadata"
+    },
+    {
+      "source": "event_bribery_incident_20230805",
+      "target": "event_surveillance_20230520",
+      "confidence": "low",
+      "label": "Behavioral pattern"
+    },
+    {
+      "source": "person_diane_park",
+      "target": "person_sergei_garcia",
+      "confidence": "low",
+      "label": "Financial anomaly"
+    },
+    {
+      "source": "person_leo_tanaka",
+      "target": "person_mei_kowalski",
+      "confidence": "low",
+      "label": "Social media link"
+    },
+    {
+      "source": "person_angelo_ferrara",
+      "target": "person_omar_hassan",
+      "confidence": "low",
+      "label": "Travel pattern match"
+    },
+    {
+      "source": "org_eclipse_ventures",
+      "target": "org_golden_phoenix",
+      "confidence": "low",
+      "label": "Social media link"
+    },
+    {
+      "source": "event_shell_filing_20230610",
+      "target": "event_campaign_dinner_20230120",
+      "confidence": "low",
+      "label": "Possible connection"
+    },
+    {
+      "source": "org_silverstone_trust",
+      "target": "person_katya_johannsen",
+      "confidence": "low",
+      "label": "Unconfirmed report"
+    },
+    {
+      "source": "org_red_line_logistics",
+      "target": "person_omar_hassan",
+      "confidence": "low",
+      "label": "Financial anomaly"
+    },
+    {
+      "source": "event_cash_drop_20230418",
+      "target": "person_chen_nakamura",
+      "confidence": "low",
+      "label": "Phone metadata"
+    },
+    {
+      "source": "org_pacific_rim",
+      "target": "event_audit_meeting_20230515",
+      "confidence": "low",
+      "label": "Possible connection"
+    },
+    {
+      "source": "org_pinnacle_advisory",
+      "target": "event_bribery_incident_20230805",
+      "confidence": "low",
+      "label": "Phone metadata"
+    },
+    {
+      "source": "event_warehouse_mtg_20230115",
+      "target": "org_vanguard_realty",
+      "confidence": "low",
+      "label": "Financial anomaly"
+    },
+    {
+      "source": "event_warehouse_mtg_20230115",
+      "target": "event_crypto_transfer_20230620",
+      "confidence": "low",
+      "label": "Possible connection"
+    },
+    {
+      "source": "person_grace_mueller",
+      "target": "person_ivan_fedorov",
+      "confidence": "low",
+      "label": "Travel pattern match"
+    },
+    {
+      "source": "event_audit_meeting_20230515",
+      "target": "person_rosa_garcia",
+      "confidence": "low",
+      "label": "Proximity alert"
+    }
+  ]
+}
