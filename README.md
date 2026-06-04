@@ -104,7 +104,7 @@ Baseline scores using the included dataset with the default force-directed algor
 | Scenario | Nodes | Edges | Baseline Score | Improved Target |
 |----------|-------|-------|----------------|-----------------|
 | High only | ~60 | ~60 | ~0.90 | ~0.95 |
-| High + Medium | ~95 | ~160 | ~0.80 | ~0.85 |
+| High + Medium | ~95 | ~160 | ~0.8 | ~0.9 |
 | All (high + medium + low) | ~100 | ~300 | ~0.55 | ~0.70 |
 
 The high-only scenario is already well-handled by basic force-directed layout. The primary challenges are:

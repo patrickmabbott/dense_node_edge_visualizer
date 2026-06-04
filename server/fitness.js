@@ -196,11 +196,12 @@ export function evaluateFitness(positionedNodes, edges, iterations, converged, o
   };
 
   // Check whether the algorithm uses excessive space in pursuit of other goals, thus becoming unusuable. If less than 30% of nodes are visible, apply a penalty override that sets the score to 0 regardless of other factors. This prevents gaming the other metrics by just spreading everything out.
+  let totalPenalty = 0;
   if (containmentRatio < 0.30) {
     breakdown.viewportContainment.penalty = 100000000; // effectively infinite penalty to override all others
     totalPenalty = 1;
   } else {
-      let totalPenalty = 0;
+      totalPenalty = 0;
       for (const term of Object.values(breakdown)) {
         totalPenalty += term.penalty * term.weight;
       }
